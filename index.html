@@ -220,38 +220,69 @@
           </div>
         </div>
 
-        <form class="order-form" id="orderForm">
-          <label>
-            Full name
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-          <label>
-            Phone number
-            <input type="tel" name="phone" placeholder="Your phone number" required>
-          </label>
-          <div class="form-row">
-            <label>
-              Product
-              <select name="product" required>
-                <option value="">Select size</option>
-                <option>350 ml</option>
-                <option>500 ml</option>
-                <option>1.5 L</option>
-                <option>5 L</option>
-              </select>
-            </label>
-            <label>
-              Quantity
-              <input type="number" name="quantity" min="1" placeholder="Qty" required>
-            </label>
-          </div>
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="Tell us what you need..."></textarea>
-          </label>
-          <button class="button button-primary full" type="submit">Prepare Enquiry</button>
-          <p class="form-message" id="formMessage" role="status"></p>
-        </form>
+        <form class="order-form" action="https://formsubmit.co/nalienterprise22@gmail.com" method="POST">
+
+  <input type="hidden" name="_subject" value="New Nali Enterprise Website Enquiry">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Spam protection -->
+  <input type="text" name="_honey" style="display:none">
+
+  <label>
+    Full name *
+    <input type="text" name="Full Name" placeholder="Your name" required>
+  </label>
+
+  <label>
+    Company / Business name
+    <input type="text" name="Company" placeholder="Company or business name">
+  </label>
+
+  <label>
+    Phone number *
+    <input type="tel" name="Phone" placeholder="Your phone number" required>
+  </label>
+
+  <label>
+    Email address *
+    <input type="email" name="Email" placeholder="Your email address" required>
+  </label>
+
+  <div class="form-row">
+
+    <label>
+      Product *
+      <select name="Product" required>
+        <option value="">Select size</option>
+        <option value="350 ml">350 ml</option>
+        <option value="500 ml">500 ml</option>
+        <option value="1.5 L">1.5 L</option>
+        <option value="5 L">5 L</option>
+      </select>
+    </label>
+
+    <label>
+      Quantity *
+      <input type="number" name="Quantity" min="1" placeholder="Quantity" required>
+    </label>
+
+  </div>
+
+  <label>
+    Delivery location
+    <input type="text" name="Delivery Location" placeholder="City / area">
+  </label>
+
+  <label>
+    Message / Requirements
+    <textarea name="Message" rows="5" placeholder="Tell us what you need..."></textarea>
+  </label>
+
+  <button class="button button-primary full" type="submit">
+    Send Enquiry
+  </button>
+
+</form>
       </div>
     </section>
   </main>
